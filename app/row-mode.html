@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="../jquery.js"></script>
+    <script defer src="./typing.bundle.js"></script>
+    <script defer src="./row.mode.js"></script>
+    <script src="./words.js"></script>
+    <title>Test your typing speed in 60 seconds</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="overlay">
+            <div class="popup">
+                <div class="popup-header">
+                    <div class="logo">
+                        <div class="logo-lock">
+                            <div class="left">
+                                <div class="circle"></div>
+                                <div class="main-lock"></div>
+                            </div>
+                            <div class="right">
+                                <div class="top"></div>
+                                <div class="middle"></div>
+                                <div class="bottom"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup-title">Awesome</div>
+                    <svg id="close-popup" onclick="window.location.reload()" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#444">
+                        <path d="M0 0h24v24H0V0z" fill="none" />
+                        <path
+                            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
+                    </svg>
+                </div>
+                <div class="popup-content">
+                    You managed to type at an average speed of <span>34 WPM</span> with an accuracy of <span>72%</span>!
+                </div>
+                <div class="detail-report-link">View Detailed report</div>
+                <div class="cta-cont">
+                    <div class="cta-for-popup" onclick="window.location.reload()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="rgba(255, 255, 255, 0.76)">
+                            <path
+                                d="M528 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h480c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm8 336c0 4.411-3.589 8-8 8H48c-4.411 0-8-3.589-8-8V112c0-4.411 3.589-8 8-8h480c4.411 0 8 3.589 8 8v288zM170 270v-28c0-6.627-5.373-12-12-12h-28c-6.627 0-12 5.373-12 12v28c0 6.627 5.373 12 12 12h28c6.627 0 12-5.373 12-12zm96 0v-28c0-6.627-5.373-12-12-12h-28c-6.627 0-12 5.373-12 12v28c0 6.627 5.373 12 12 12h28c6.627 0 12-5.373 12-12zm96 0v-28c0-6.627-5.373-12-12-12h-28c-6.627 0-12 5.373-12 12v28c0 6.627 5.373 12 12 12h28c6.627 0 12-5.373 12-12zm96 0v-28c0-6.627-5.373-12-12-12h-28c-6.627 0-12 5.373-12 12v28c0 6.627 5.373 12 12 12h28c6.627 0 12-5.373 12-12zm-336 82v-28c0-6.627-5.373-12-12-12H82c-6.627 0-12 5.373-12 12v28c0 6.627 5.373 12 12 12h28c6.627 0 12-5.373 12-12zm384 0v-28c0-6.627-5.373-12-12-12h-28c-6.627 0-12 5.373-12 12v28c0 6.627 5.373 12 12 12h28c6.627 0 12-5.373 12-12zM122 188v-28c0-6.627-5.373-12-12-12H82c-6.627 0-12 5.373-12 12v28c0 6.627 5.373 12 12 12h28c6.627 0 12-5.373 12-12zm96 0v-28c0-6.627-5.373-12-12-12h-28c-6.627 0-12 5.373-12 12v28c0 6.627 5.373 12 12 12h28c6.627 0 12-5.373 12-12zm96 0v-28c0-6.627-5.373-12-12-12h-28c-6.627 0-12 5.373-12 12v28c0 6.627 5.373 12 12 12h28c6.627 0 12-5.373 12-12zm96 0v-28c0-6.627-5.373-12-12-12h-28c-6.627 0-12 5.373-12 12v28c0 6.627 5.373 12 12 12h28c6.627 0 12-5.373 12-12zm96 0v-28c0-6.627-5.373-12-12-12h-28c-6.627 0-12 5.373-12 12v28c0 6.627 5.373 12 12 12h28c6.627 0 12-5.373 12-12zm-98 158v-16c0-6.627-5.373-12-12-12H180c-6.627 0-12 5.373-12 12v16c0 6.627 5.373 12 12 12h216c6.627 0 12-5.373 12-12z" />
+                        </svg>Type again</div>
+                    <div class="cta-for-popup-2">Print Certificate<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="rgba(255, 255, 255, 0.76)">
+                            <path
+                                d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z" />
+                        </svg></div>
+                </div>
+            </div>
+        </div>
+        <div class="overlay-2">
+            <div class="popup-2">
+                <div class="popup-header">
+                    <div class="logo">
+                        <div class="logo-lock">
+                            <div class="left">
+                                <div class="circle"></div>
+                                <div class="main-lock"></div>
+                            </div>
+                            <div class="right">
+                                <div class="top"></div>
+                                <div class="middle"></div>
+                                <div class="bottom"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup-title">Detailed Report</div>
+                    <svg id="close-popup" onclick="window.location.reload()" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#444">
+                        <path d="M0 0h24v24H0V0z" fill="none" />
+                        <path
+                            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
+                    </svg>
+                </div>
+                <div class="popup-content-2">
+                    <div class="total-typed-content"></div>
+                    <div class="other-report-info">
+                        <div class="report speed" data-type="Speed (WPM)">50</div>
+                        <div class="report accuracy" data-type="Accuracy (%)">94</div>
+                        <div class="report trouble-letter" data-type="Trouble letter">E</div>
+                        <div class="report characters" data-type="Characters (CPM)">164</div>
+                        <div class="report conclusion" data-type="Conclusion"></div>
+                    </div>
+                </div>
+                <div class="print-detailed-report">Print report<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="rgba(255, 255, 255, 0.76)">
+                        <path
+                            d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z" />
+                    </svg></div>
+            </div>
+        </div>
+        <div class="app-body">
+            <div class="app-title">
+                <span class="title">Typing speed Test</span>
+                <span class="mode">Row mode</span>
+            </div>
+            <div class="play-area">
+                <div class="counters">
+                    <div class="clock">
+                        <div class="time">60</div>
+                    </div>
+                    <div class="speed br">
+                        <span class="label">Speed WPM</span><span class="value" id="speed">0</span>
+                    </div>
+                    <div class="accuracy br">
+                        <span class="label">Accuracy %</span><span class="value" id="accuracy">0</span>
+                    </div>
+                </div>
+                <div class="typing-area-cont">
+                    <div class="type-area">
+                        <div class="inticer1">Start typing</div>
+                        <div class="inticer2"></div>
+                        <pre class="rubbish"></pre>
+                        <pre id="canvas">Loading...</pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

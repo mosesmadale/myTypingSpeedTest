@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Typing speed test settings - Iris</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <form class="side-settings" method="GET" action="set-settings.php">
+            <div class="home-button" onclick="window.location.href='../'">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                    <path d="M0 0h24v24H0V0z" fill="none" />
+                    <path
+                        d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" />
+                </svg>
+                <span>Home</span>
+            </div>
+            <h1 class="side-settings-title"><span>Settings</span></h1>
+            <div class="settings-list">
+                <div class="setting-bundle first-bundle">
+                    <div class="setting-bundle-name">Sounds</div>
+                    <div class="setting-bundle-list">
+                        <div class="setting" data-toggled="false" id="music">
+                            Music<input type="checkbox" name="music" />
+                        </div>
+                        <div class="setting" data-toggled="false" id="fx">
+                            FX<input type="checkbox" name="fx" />
+                        </div>
+                    </div>
+                </div>
+                <div class="setting-bundle second-bundle">
+                    <div class="setting-bundle-name">Layout</div>
+                    <div class="setting-bundle-list">
+                        <div class="setting">
+                            Column mode <input type="radio" name="mode" value="column" />
+                        </div>
+                        <div class="setting">
+                            Row mode <input type="radio" name="mode" value="row" checked />
+                        </div>
+                        <div class="setting">
+                            Full screen mode
+                            <input type="radio" name="mode" value="full screen" />
+                        </div>
+                        <div class="setting">
+                            Game mode <input type="radio" name="mode" value="game" />
+                        </div>
+                    </div>
+                </div>
+                <div class="setting-bundle third-bundle">
+                    <div class="setting-bundle-name">Level</div>
+                    <div class="setting-bundle-list">
+                        <div class="setting">
+                            Beginner <input type="radio" name="level" value="beginner" checked />
+                        </div>
+                        <div class="setting">
+                            Intermediate
+                            <input type="radio" name="level" value="intermediate" />
+                        </div>
+                        <div class="setting">
+                            Advanced <input type="radio" name="level" value="advanced" />
+                        </div>
+                    </div>
+                </div>
+                <div class="setting-bundle fourth-bundle">
+                    <div class="setting-bundle-name">Other settings</div>
+                    <div class="setting-bundle-list">
+                        <div class="setting" data-toggled="false" id="punctuation">
+                            Punctuation<input type="checkbox" name="punctuation" />
+                        </div>
+                        <div class="setting" data-toggled="false" id="caps">
+                            Capital letters<input type="checkbox" name="capital-letters" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button name="submit" value="submit" type="submit" class="save-changes">Start typing</button>
+        </form>
+    </div>
+</body>
+
+</html>

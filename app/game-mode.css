@@ -1,0 +1,29 @@
+.game-area {
+    width: 50%;
+}
+
+#game {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 0px 1px rgba(0, 0, 0, 0.479);
+    width: 100%;
+    padding: 20px;
+    font-size: 2em;
+    color: #444;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#game span {
+    font-size: 0.5em;
+    text-transform: uppercase;
+    font-family: monserrat-light;
+}
+
+@media only screen and (max-width: 1000px) {
+    .game-area {
+        width: 80%;
+    }
+}

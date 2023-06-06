@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../logo-render.css">
+    <link rel="stylesheet" href="style2.css">
+    <title>Error - feature not available yet!</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <div class="logo-lock">
+                    <div class="left">
+                        <div class="circle"></div>
+                        <div class="main-lock"></div>
+                    </div>
+                    <div class="right">
+                        <div class="top"></div>
+                        <div class="middle"></div>
+                        <div class="bottom"></div>
+                    </div>
+                </div>
+            </div>
+            <a href="./" class="cancel">Back</a>
+        </nav>
+        <div class="content-card">
+            <div class="title">Sorry,</div>
+            <svg id="cross" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <style>
+                    .line-cross1-a {
+                        animation: line-cross1-draw 2s 1;
+                        stroke-dasharray: 150;
+                    }
+
+                    .line-cross1-b {
+                        animation: line-cross1-draw 2s 1;
+                        stroke-dasharray: 150;
+                    }
+
+                    @keyframes line-cross1-draw {
+                        0% {
+                            stroke-dashoffset: 150;
+                        }
+
+                        100% {
+                            stroke-dashoffset: 0;
+                        }
+                    }
+
+                    @media (prefers-reduced-motion: reduce) {
+
+                        .line-cross1-a,
+                        .line-cross1-b {
+                            animation: none;
+                        }
+                    }
+                </style>
+                <line class="line-cross1-a stroke1" x1="4.70711" y1="4.29289" x2="96.7071" y2="96.2929" stroke="rgb(255, 0, 64)" stroke-width="10px" style="animation-duration: 2s;"></line>
+                <line class="line-cross1-b stroke1" x1="3.29289" y1="96.2929" x2="95.2929" y2="4.29289" stroke="rgb(255, 0, 64)" stroke-width="10px" style="animation-duration: 2s;"></line>
+            </svg>
+            <div>Typing tutorials are not available yet!</div>
+            <div class="cta-next" onclick="window.location.href='./'" style="background-image: linear-gradient(-45deg, rgb(255, 0, 64), rgb(0, 43, 160));"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="rgba(255, 255, 255, 0.76)">
+                    <path d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z" />
+                </svg>Back</div>
+        </div>
+        <div class="extension">
+        </div>
+    </div>
+</body>
+
+</html>
